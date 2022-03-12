@@ -8,8 +8,9 @@
 // console.log(typeof(answer));
 
 const answers = [];
-answers[0] = prompt('Как Ваше имя?', ' ');
-answers[1] = prompt('Какая Ваша фамилия?', ' ');
-answers[2] = prompt('Сколько Вам лет?', ' ');
+// answers[0] = prompt('Как Ваше имя?', ' ');
+// answers[1] = prompt('Какая Ваша фамилия?', ' ');
+// answers[2] = prompt('Сколько Вам лет?', ' ');
 
-document.write(answers);
+// document.write(answers);
+console.log(typeof(answers));
