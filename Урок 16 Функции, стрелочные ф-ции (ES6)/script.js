@@ -124,3 +124,21 @@ function addX(x) {
 const addThree = addX(3);
 let d = addThree(c);
 console.log('example partial application', d);
+
+
+// function sayHi(name) {
+//     var phrase = "Привет, " + name;
+//     alert( phrase );
+//   }
+  
+//   sayHi('Вася');
+
+var phrase = 'Привет';
+say('Вася');
+
+
+function say(name) {
+    console.log( name + ", " + phrase );
+}
+
+
