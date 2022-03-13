@@ -76,6 +76,14 @@ function showMyDB(){
         console.log("Приватность включина, нет доступа!");
     }
 }
+
+// function showMyDB(hidden){
+//     if (!hidden){
+//         console.log(personalMovieDB);
+//     }
+// }
+// showMyDB(personalMovieDB.private);
+
 showMyDB();
 
 // // Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
@@ -84,15 +92,17 @@ showMyDB();
 
 function writeYourGenres (){
     for (let i = 1; i <= 3; i++){
-        const a = prompt("Ваш любимый жанр под номером" + " " + i , "");
-            if (a != null &&  a != "" && a.length < 50){
-            personalMovieDB.generes[i] = a;
+        const a = prompt("Ваш любимый жанр под номером" + " " + i , "");  // `Ваш любимый жанр под номером ${i}` 
+            if (a != null &&  a != "" && a.length < 50){  
+            personalMovieDB.generes[i - 1] = a;
         } else {
             i--;
             console.log("Error");
         }
     }
 }
+// personalMovieDB.generes[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`, "");
+
 
 writeYourGenres();
 console.log(personalMovieDB);
