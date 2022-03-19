@@ -11,9 +11,9 @@ window.addEventListener('DOMContentLoaded', function() {
 	function hideTabContent() {
         
         tabsContent.forEach(item => {
-            item.classList.add('hide'); // анимация css
-            item.classList.remove('show', 'fade'); // анимация css
-           // item.style.display = 'none'
+            // item.classList.add('hide'); // анимация css
+            // item.classList.remove('show', 'fade'); // анимация css
+           item.style.display = 'none';
         });
 
         tabs.forEach(item => {
@@ -22,9 +22,9 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
 
 	function showTabContent(i = 0) { // по умалчанию i = 0
-        tabsContent[i].classList.add('show', 'fade'); // анимация css
-        tabsContent[i].classList.remove('hide'); // анимация css
-        // tabsContent[i].style.display = 'block'
+        // tabsContent[i].classList.add('show', 'fade'); // анимация css
+        // tabsContent[i].classList.remove('hide'); // анимация css
+        tabsContent[i].style.display = 'block';
         tabs[i].classList.add('tabheader__item_active');
     }
     
